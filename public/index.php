@@ -11,8 +11,8 @@ use MVC\Router;
 $router = new Router();
 
 // Iniciar Sesión
-$router->get('/', [LoginController::class, 'login']);
-$router->post('/', [LoginController::class, 'login']);
+$router->get('/indexlil', [LoginController::class, 'login']);
+$router->post('/indexlil', [LoginController::class, 'login']);
 $router->get('/logout', [LoginController::class, 'logout']);
 
 // Recuperar Password
